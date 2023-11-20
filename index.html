@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="shortcut icon" href="favicon/sol.png" type="image/png">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>VERIFICADOR DE IDADE</h1>
+    </header>
+
+    <main>
+        <section> 
+            <div id="infos">
+                <h2>Ano de nascimento:</h2>
+                <p>
+                    <input type="number" name="txtano" id="txtano" placeholder="ano de nascimento">
+                </p>
+                <h2 class="sub">Sexo:</h2>
+                <p class="group">
+                        <input class="sex" type="radio" name="optsex" id="m" checked>
+                        <label class="texto" for="m">Masculino</label>
+                        <input class="sex" type="radio" name="optsex" id="f">
+                        <label class="texto" for="f">Feminino</label>
+                </p>
+                <p>
+                    <input id="botao" type="button" value="Enviar" onclick="enviar()">
+                </p>
+            </div>
+            <div id="res">
+                <p>Seu resultado é:</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        *Made by <a id="link" href="https://www.linkedin.com/in/arthursantanaprogramador/" target="_blank" rel="external">Arthur Santana</a>*
+    </footer>
+
+    <script src="script/script.js"></script>
+
+</body>
+</html>
