@@ -22,9 +22,11 @@ function enviar() {
             } else if (idade < 50) {
                 //Adulto
                 img.setAttribute('src', './imagens/adulto-m.png')
-            } else {
+            } else if (idade < 120){
                 //idoso
                 img.setAttribute('src', './imagens/idoso-m.png')
+            } else {
+                img.setAttribute('src', './imagens/esqueleto.png')
             }
             
         } else if (sex[1].checked)  {
@@ -38,9 +40,11 @@ function enviar() {
             } else if (idade < 50) {
                 //Adulto
                 img.setAttribute('src', './imagens/adulto-f.png')
-            } else {
+            } else if (idade < 120) {
                 //idoso
                 img.setAttribute('src', './imagens/idoso-f.png')
+            } else {
+                img.setAttribute('src', './imagens/esqueleto.png')
             }
         }
         res.style.textAlign = 'center'
